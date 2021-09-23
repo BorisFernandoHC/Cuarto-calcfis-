@@ -1,116 +1,140 @@
-:root{
-    /* PRIMARY COLORS */
-   --Pale-blue:hsl(225, 100%, 94%);
+   
+:root {
+   font-family: "Red Hat Display", sans-serif;
+   /* Primary colors */
+   --Pale-blue: hsl(225, 100%, 94%);
    --Bright-blue: hsl(245, 75%, 52%);
-   /* NEUTRAL COLORS */
+ 
+   /* Neutral Colors */
    --Very-pale-blue: hsl(225, 100%, 98%);
    --Desaturated-blue: hsl(224, 23%, 55%);
    --Dark-blue: hsl(223, 47%, 23%);
-   /*FUNTE*/
-   font-family: 'Red Hat Display', sans-serif;
-   /* ANCOR COLOR */
-   --a-color:hsl(228, 45%, 44%);
-}
-body{
+ 
+   /* Anchor color */
+   --a-color: hsl(228, 45%, 44%);
+ }
+ 
+ body {
    margin: 0;
    padding: 0;
    box-sizing: border-box;
    background-color: var(--Pale-blue);
-}
-.payment-card{
-   /* centrear */
+ }
+ 
+ .payment-card {
    margin: 0 auto;
-   margin-top: 76px;
-   /* ANCHURA */
+   margin-top: 60px;
    width: 85%;
    overflow: hidden;
-   /* Para darle redondeo */
    border-radius: 20px;
-   /* fondo blanco */
    background-color: white;
-}
-.payment-card header img{
+ }
+ 
+ .payment-card header img {
    height: 148px;
    width: 100%;
-}
-main{
+ }
+ 
+ main {
    text-align: center;
-}
-main h1{
+ }
+ 
+ main h1 {
    font-weight: 900;
-}
-main p{
-   /* arriba derecha abajo izquierda */
-   margin: 0 24px 32px 24px ;
+ }
+ 
+ main p {
+   margin: 0 24px 24px 24px;
    color: var(--Desaturated-blue);
    font-weight: 500;
    line-height: 24px;
-}
-.Operaciones-container {
+ }
+ 
+ .operation-container {
    display: flex;
    flex-direction: column;
    justify-content: space-around;
    align-content: center;
    margin: 8px 24px 24px 24px;
    padding: 12px;
-   border-radius: 14px;
+   border-radius: 12px;
    background-color: var(--Very-pale-blue);
+ }
+ .operation-container input{
+ font-family: "Red Hat Display", sans-serif;
+ height: 32px;
+ border: 1px solid var(--Desaturated-blue);
+ border-radius: 12px;
+ margin-bottom: 16px;
+ margin-top: 8px;
+ outline: none;
+ text-align: center;
 }
-.Operaciones-container input{
-   font-family: 'Red Hat Display', sans-serif;
-   height: 32px;
-   border-radius: 14px;
-   margin-bottom: 16px;
-   margin-top: 8px;
-   border: 1px solid var(--Desaturated-blue);
+.operation-container__resultado{
+ position: relative;
+ border: 1px solid var(--Desaturated-blue);
+ border-radius: 12px;
+ margin-top: 32px;
+ height: 32px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
 }
-.operaciones-container__resultado{
+
+ .operation-container__resultado span{
    position: absolute;
-}
-.operaciones-container__resultado span{
-   position: relative;
    font-size: 12px;
    top: -13px;
    left: 15px;
-   border: 1px solid var(--Desaturated-blue);   
+   border: 1px solid var(--Desaturated-blue);
    border-radius: 8px;
    padding: 2px 8px;
    background-color: var(--Pale-blue);
-}
+ }
+ .operation-container__resultado p{
+   margin: 0;
+ }
 
-.plan:nth-child(3) {
+
+ .plan:nth-child(3) {
    color: var(--a-color);
    font-weight: 900;
-   align-items: center ;
-}
-.plan_type-plan :nth-child(1) {
-   color:var(--Dark-blue);
-   font-weight: 900; 
-}
-.plan_type-plan :nth-child(2) {
-   color:var(--Desaturated-blue);
-   font-weight: 500; 
-}
-
-.button-container{
+   align-items: center;
+ }
+ 
+ .plan__type-plan :nth-child(1) {
+   color: var(--Dark-blue);
+   font-weight: 900;
+ }
+ .plan__type-plan :nth-child(2) {
+   color: var(--Desaturated-blue);
+ }
+ 
+ .button-container {
    display: flex;
    flex-direction: column;
    padding: 0 24px 24px 24px;
-}
-.button-container > button{
-   font-family: 'Red Hat Display', sans-serif;
+ }
+ .button-container a {
+   display: block;
+   width: 100%;
+ }
+
+ .button-container  button {
+   font-family: "Red Hat Display", sans-serif;
    height: 48px;
-   border-radius: 14px;
+   width: 100%;
+   border-radius: 12px;
    margin-bottom: 4px;
    border: none;
    font-weight: 900;
-   
-} 
-.button_container_payment{
+   cursor: pointer;
+ }
+ .button-container__payment {
    background-color: var(--Bright-blue);
    color: var(--Very-pale-blue);
-}
-.button_container_cancel{
-   background-color: white;
+ }
+ .button-container__cancel {
+   background-color: var(--Very-pale-blue);
    color: var(--Desaturated-blue);
-}
+ }
