@@ -8,6 +8,22 @@ var calcularAreaCuadrado = () => {
 
 
 
+
+const areaDelTriangulo = (baseDelTriangulo,alturaDelTriangulo) => baseDelTriangulo * alturaDelTriangulo /2;
+var calcularAreaTriangulo = () => {
+    const baseDelTriangulo = document.querySelector("#base-triangulo").value;
+    const alturaDelTriangulo = document.querySelector("#altura-triangulo").value;
+    const resultado = areaDelTriangulo(baseDelTriangulo, alturaDelTriangulo)
+    document.querySelector("#resultado-triangulo").innerHTML = resultado
+}
+var calcularPerimetroTriangulo = () => {
+    const baseDelTriangulo = document.querySelector("#base-triangulo").value;
+    const alturaDelTriangulo = document.querySelector("#altura-triangulo").value;
+    const resultado = perimetroDelTriangulo(baseDelTriangulo, alturaDelTriangulo)
+    document.querySelector("#resultado-triangulo").innerHTML = resultado
+}
+
+
 // const ladoDelCuadrado = 6;
 // const PI = 3.1416;
 // let variableQueCambia
