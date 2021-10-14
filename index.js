@@ -23,7 +23,25 @@ var calcularPerimetroTriangulo = () => {
     document.querySelector("#resultado-triangulo").innerHTML = resultado
 }
 
+//calculo del romobo
+const areaDelRombo = (baseDelRombo, alturaDelRombo) =>
+  baseDelRombo * alturaDelRombo;
+const perimetroDelRombo = (baseDelRombo, ladoDelRombo) =>
+  ladoDelRombo * ladoDelRombo + baseDelRombo * baseDelRombo;
 
+var calcularAreaRombo = () => {
+  const altDR = document.querySelector("#altura-rombo").value;
+  const baseDR = document.querySelector("#base-rombo").value;
+
+  const resultado = areaDelRombo(altDR, baseDR);
+  document.querySelector("#resultado").innerHTML = resultado;
+};
+var calcularPerimetroRombo = () => {
+  const ladoDR = document.querySelector("#lado-rombo").value;
+  const baseDR = document.querySelector("#base-rombo").value;
+  const resultado = perimetroDelRomboide(ladoDR, baseDR);
+  document.querySelector("#resultado").innerHTML = resultado;
+};
 // const ladoDelCuadrado = 6;
 // const PI = 3.1416;
 // let variableQueCambia
