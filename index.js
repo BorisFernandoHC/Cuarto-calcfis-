@@ -39,7 +39,7 @@ var calcularAreaRombo = () => {
 var calcularPerimetroRombo = () => {
   const ladoDR = document.querySelector("#lado-rombo").value;
   const baseDR = document.querySelector("#base-rombo").value;
-  const resultado = perimetroDelRomboide(ladoDR, baseDR);
+  const resultado = perimetroDelRombo(ladoDR, baseDR);
   document.querySelector("#resultado").innerHTML = resultado;
 };
 // const ladoDelCuadrado = 6;
